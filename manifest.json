@@ -1,0 +1,20 @@
+{
+  "name": "Most Visited Website",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icons/16.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["most-visited-websites-extension.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Most Visited Website"
+  },
+  "permissions": ["storage"]
+}
