@@ -1,5 +1,7 @@
 {
   "name": "Most Visited Website",
+  "description": "a chrome extension that shows you the 10 websites you see most",
+  "author": "Mohammad MohammadAlian",
   "version": "1.0",
   "manifest_version": 2,
   "icons": {
