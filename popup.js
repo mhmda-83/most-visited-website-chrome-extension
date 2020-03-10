@@ -1,5 +1,4 @@
 const list = document.getElementById('list');
-
 chrome.storage.sync.get('mostVisitedWebsites', value => {
   // check if no value set yet
   if (Object.keys(value).length === 0) {
@@ -9,6 +8,7 @@ chrome.storage.sync.get('mostVisitedWebsites', value => {
       '<h2>There is not item in list<h2>'
     );
   }
+  
   // get top 10 websites
   value.mostVisitedWebsites = value.mostVisitedWebsites.slice(0, 10);
 

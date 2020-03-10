@@ -1,7 +1,36 @@
 body {
+  padding: 10px 20px;
   width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-li {
-  font-size: 20px;
+ul{
+  padding: 0;
+}
+li,li::after,li::before {
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  display: block; height: 1px;
+  border: 0; border-top: 1px solid #ccc;
+  margin: 1em 0; padding: 0;
+}
+a{
+  text-decoration: none;
+  padding: 4px;
+}
+a:visited{
+  color: blue;
+}
+#clear{
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 12px;
+  background-color: #eee;
+  color: #2a2a2a;
+  font-size: 18px;
 }
